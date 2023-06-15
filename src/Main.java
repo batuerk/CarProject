@@ -17,5 +17,12 @@ public class Main {
         System.out.println("enginePower: "+mercedes.enginePower);
         mercedes.packetChoice = "jump";
         System.out.println("packetChoice: "+mercedes.packetChoice);
+
+        GetClass getClass = new GetClass();
+        getClass.getBrandName(bmw);
+        getClass.getBrandName(audi);
+        getClass.getBrandName(mercedes);
+
+
     }
 }
