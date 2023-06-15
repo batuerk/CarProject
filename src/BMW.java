@@ -1,16 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class BMW {
     String brandName;
     String modelName;
     int modelYear;
     int enginePower;
-    String packetChoice;
+    List<String> packetChoice;
 
-    public BMW(String brandName, String modelName, int modelYear, int enginePower, String packetChoice) {
+    public BMW(String brandName, String modelName, int modelYear, int enginePower, List<String> packetChoice) {
         this.brandName = brandName;
         this.modelName = modelName;
         this.modelYear = modelYear;
         this.enginePower = enginePower;
-        this.packetChoice = packetChoice;
+        this.packetChoice = new ArrayList<>(packetChoice);
     }
     public void print() {
         System.out.println("Brand Name: "+brandName);
@@ -21,4 +24,14 @@ public class BMW {
 
     }
 
+
+    public String getCar() {
+        return "BMW{" +
+                "brandName='" + brandName + '\'' +
+                ", modelName='" + modelName + '\'' +
+                ", modelYear=" + modelYear +
+                ", enginePower=" + enginePower +
+                ", packetChoice='" + packetChoice + '\'' +
+                '}';
+    }
 }

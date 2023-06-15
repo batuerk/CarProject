@@ -1,6 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        BMW bmw = new BMW("bmw", "320", 2020, 200, "jump");
+        List<String> packets = new ArrayList<>();
+        packets.add("jump");
+        packets.add("elite");
+        BMW bmw = new BMW("bmw", "320", 2020, 200, packets );
         bmw.print();
 
         Audi audi = new Audi("audi", "Q7", 2020, 220, "jump");
